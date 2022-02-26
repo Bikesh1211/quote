@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes Generator</title>
+
+    <style>
+        body{
+            margin: 0;padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(168, 190, 252);
+        }
+        .container{
+            background-color: rgb(69, 69, 248);
+            color: rgb(23, 10, 001);
+            padding: 20px;
+            width: 700px;
+            position: relative;
+            margin: 10px;
+            margin-top: 100px;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            font-style: oblique;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        .btn-container{
+            /* position: absolute; */
+            bottom: 20px;
+            right: 20px;
+        }
+
+        button{
+            background-color: #A8BEFC;
+            padding: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            
+        }
+        button:hover{
+            background-color: #1EC5E5;
+        }
+        #quote-generator{
+            font-style: italic;
+            font-size: 50px;
+            font-family: Times, 'Times New Roman', serif;
+            font-weight: bold;
+
+        }
+            #quote-author{
+                color: #e1dbff;
+                text-align: end;
+            }
+            #quote-text{    
+                text-align: left;
+            }
+            .quote-container{
+                transition: all ease-in 1s;
+            }
+            .twitter-btn img{
+                height: 10px;
+                width: 10px;
+            }
+    </style>
+    
+</head>
+<body>
+
+    <div class="container">
+
+        <h1 id="quote-generator">Quotes Generator</h1>
+        <div class="quote-container">
+
+            <h1 id="quote-text">Quote Loading...</h1>
+            <h2 id="quote-author">Author...</h2>
+        </div>
+
+        <div class="btn-container">
+
+            <button id="new-quote-btn">New Quote</button>
+            <button id="twitter-btn">
+                Tweet
+            </button>
+        </div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <!-- JavaScript -->
+
+</body>
+</html>
